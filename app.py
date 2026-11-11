@@ -15,3 +15,8 @@ def add_tenant(name, flat_id):
 def list_tenants():
     for t in tenants:
         print(t["name"], t["flat"])
+
+payments = []
+
+def pay_rent(tenant, amount, date):
+    payments.append((tenant, amount, date))
