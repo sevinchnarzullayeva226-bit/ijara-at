@@ -20,3 +20,6 @@ payments = []
 
 def pay_rent(tenant, amount, date):
     payments.append((tenant, amount, date))
+
+def total_paid(tenant):
+    return sum(a for t, a, d in payments if t == tenant)
