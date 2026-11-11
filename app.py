@@ -6,3 +6,12 @@ def add_flat(address, rooms, price):
 def list_flats():
     for i, f in enumerate(flats, 1):
         print(i, f["address"], f["rooms"], f["price"])
+
+tenants = []
+
+def add_tenant(name, flat_id):
+    tenants.append({"name": name, "flat": flat_id})
+
+def list_tenants():
+    for t in tenants:
+        print(t["name"], t["flat"])
