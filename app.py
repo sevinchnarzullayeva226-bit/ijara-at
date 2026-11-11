@@ -11,3 +11,7 @@ tenants = []
 
 def add_tenant(name, flat_id):
     tenants.append({"name": name, "flat": flat_id})
+
+def list_tenants():
+    for t in tenants:
+        print(t["name"], t["flat"])
